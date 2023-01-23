@@ -1,0 +1,163 @@
+<button class="btn btn-primary" (click)="logout()">Log Out</button><br><br>
+<h3 class="text-center">Kullanıcı Listesi </h3>
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">İsim</th>
+      <th scope="col">email</th>      
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users; index as i">
+      <th scope="row">{{i + 1}}</th>
+      <td>{{ user.displayName}}</td>
+      <td>{{ user.email}}</td>
+      <td>
+      <button class="btn btn-danger" (click)="deleteUser(user.uid)">Sil</button>
+      </td>
+      <td>
+      <button class="btn btn-warning" (click)="setAdmin(user.uid)">Admin Yap</button>
+      </td>
+      <td>
+      <td>
+      <button class="btn btn-warning">Ayrıntılar</button>
+      </td>
+      <td>
+      <button class="btn btn-success">Düzenle</button>
+      </td>
+      <td>
+      <button class="btn btn-dark">Mesaj Gönder</button>
+      </td>
+    </tr>
+
+   
+  </tbody>
+</table>
+
+<button class="btn btn-info position" >Üye Ekle</button>
+
+<br><br>
+
+<h3 class="text-center">Kategori Listesi </h3>
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>
+      <button class="btn btn-danger">Sil</button>
+      </td>
+      <td>
+      <button class="btn btn-warning">Ayrıntılar</button>
+      </td>
+      <td>
+      <button class="btn btn-success">Düzenle</button>
+      </td>
+      
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+      <td>
+      <button class="btn btn-danger">Sil</button>
+      </td>
+      <td>
+      <button class="btn btn-warning">Ayrıntılar</button>
+      </td>
+      <td>
+      <button class="btn btn-success">Düzenle</button>
+      </td>
+      
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+      <td>
+      <button class="btn btn-danger">Sil</button>
+      </td>
+      <td>
+      <button class="btn btn-warning">Ayrıntılar</button>
+      </td>
+      <td>
+      <button class="btn btn-success">Düzenle</button>
+      </td>
+      
+    </tr>
+  </tbody>
+</table>
+<button class="btn btn-info">Kategori Ekle</button>
+<br><br>
+<h3 class="text-center">Ürün Listesi </h3>
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>
+      <button class="btn btn-danger">Sil</button>
+      </td>
+      <td>
+      <button class="btn btn-warning">Ayrıntılar</button>
+      </td>
+      <td>
+      <button class="btn btn-success">Düzenle</button>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+      <td>
+      <button class="btn btn-danger">Sil</button>
+      </td>
+      <td>
+      <button class="btn btn-warning">Ayrıntılar</button>
+      </td>
+      <td>
+      <button class="btn btn-success">Düzenle</button>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+      <td>
+      <button class="btn btn-danger">Sil</button>
+      </td>
+      <td>
+      <button class="btn btn-warning">Ayrıntılar</button>
+      </td>
+      <td>
+      <button class="btn btn-success">Düzenle</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<button class="btn btn-info">Ürün Ekle</button>
